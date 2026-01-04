@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header class="site-header">
@@ -15,6 +15,9 @@
           Skyline Event Center
         </a>
 
+        <button class="menu-toggle" type="button" aria-label="Toggle menu">
+          ☰
+        </button>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -88,6 +91,21 @@
         </p>
       </section>
     </main>
-    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+
+        console.log("toggle:", toggle);
+        console.log("navLinks:", navLinks);
+
+        if (!toggle || !navLinks) return;
+
+        toggle.addEventListener("click", () => {
+          navLinks.classList.toggle("show");
+          console.log("navLinks class:", navLinks.className);
+        });
+      });
+    </script>
   </body>
 </html>

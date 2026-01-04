@@ -15,6 +15,8 @@
           Skyline Event Center
         </a>
 
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
@@ -105,7 +107,9 @@
           <img src="images/gallery-1.jpg" alt="Conference setup with seating" />
           <img src="images/gallery-2.jpg" alt="Stage lighting at a live show" />
           <img src="images/crowd.jpg" alt="Guests enjoying a venue event" />
-          <img src="images/gallery-3.jpg" alt="Venue hall prepared for an event"
+          <img
+            src="images/gallery-3.jpg"
+            alt="Venue hall prepared for an event"
           />
         </div>
       </section>
@@ -133,6 +137,12 @@
     </footer>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+      const toggle = document.querySelector(".menu-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("show");
+      });
     </script>
   </body>
 </html>
