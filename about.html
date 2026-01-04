@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <body>
+      <header class="site-header">
+        <nav class="nav container" aria-label="Primary">
+          <a class="brand" href="index.html">
+            <img src="images/logo.gif" alt="Skyline logo" width="32" />
+            Skyline Event Center
+          </a>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" aria-current="page">About</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a class="btn" href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main class="container">
+        <h1>About Skyline Event Center</h1>
+        <p>
+          Skyline Event Center is a modern venue built for concerts,
+          conferences, and private celebrations. We focus on great sound, smooth
+          logistics, and a premium guest experience.
+        </p>
+
+        <section class="about-grid">
+          <div>
+            <h2>Our Story</h2>
+            <p>
+              Founded to bring high-quality events to the city, Skyline blends a
+              flexible space with professional production. From live music to
+              corporate keynotes, we’re built to adapt.
+            </p>
+
+            <h2>Mission</h2>
+            <p>
+              Our mission is to deliver a stress-free venue experience—clear
+              communication, reliable setups, and memorable nights.
+            </p>
+
+            <h2>Amenities</h2>
+            <ul>
+              <li>Capacity up to 500 guests</li>
+              <li>Stage, lighting, and pro sound</li>
+              <li>Conference wing + breakout rooms</li>
+              <li>On-site staff & security options</li>
+              <li>Parking + vendor load-in access</li>
+            </ul>
+
+            <p>
+              View upcoming events on the
+              <a href="events.html">Events page</a> or
+              <a href="contact.html">contact us</a> to book.
+            </p>
+
+            <p>
+              External link: learn more about accessibility standards at
+              <a href="https://www.ada.gov/" target="_blank" rel="noopener"
+                >ADA.gov</a
+              >.
+            </p>
+          </div>
+
+          <figure class="about-figure">
+            <img
+              src="images/venue.jpg"
+              alt="Interior view of Skyline Event Center seating area"
+            />
+            <figcaption>
+              Flexible seating and staging for multiple event types.
+            </figcaption>
+
+            <p>Jump to <a href="#team">our team</a>.</p>
+          </figure>
+        </section>
+
+        <section id="team">
+          <h2>Our Team</h2>
+          <p>
+            Our staff includes event coordinators, audio/lighting techs, and
+            front-of-house support to keep your event running on time.
+          </p>
+        </section>
+
+        <p>
+          <a class="back-to-top" href="#top">Back to top ↑</a>
+        </p>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid">
+          <p>&copy; <span id="year"></span> Skyline Event Center</p>
+
+          <p class="footer-links">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener"
+              >Instagram</a
+            >
+            <span aria-hidden="true">·</span>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener"
+              >Facebook</a
+            >
+            <span aria-hidden="true">·</span>
+            <a href="contact.html">Contact</a>
+          </p>
+        </div>
+      </footer>
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </body>
+  </body>
+</html>

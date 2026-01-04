@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img src="images/logo.gif" alt="Skyline logo" width="32" />
+          Skyline Event Center
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html" aria-current="page">Events</a></li>
+          <li><a class="btn" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="top"></div>
+      <h1>Upcoming Events</h1>
+      <p>
+        Explore what's next at Skyline. Click an event to book or ask questions.
+      </p>
+      <section aria-labelledby="featured-events">
+        <h2 id="featured-events">Featured Events</h2>
+
+        <div class="card-grid">
+          <article class="event-card">
+            <img src="images/crowd.jpg" alt="Crowd enjoying a live event" />
+            <h3>Winter Night Jazz</h3>
+            <p>Friday • 7:00 PM • Main Hall</p>
+            <a class="btn-small" href="contact.html">Book / Ask</a>
+          </article>
+
+          <article class="event-card">
+            <img
+              src="images/gallery-1.jpg"
+              alt="Conference audience listening to a speaker"
+            />
+            <h3>Startup Summit</h3>
+            <p>Saturday • 10:00 AM • Conference Wing</p>
+            <a class="btn-small" href="contact.html">Book / Ask</a>
+          </article>
+
+          <article class="event-card">
+            <img
+              src="images/gallery-2.jpg"
+              alt="Comedy show stage with microphone"
+            />
+            <h3>Comedy Showcase</h3>
+            <p>Sunday • 8:00 PM • Main Hall</p>
+            <a class="btn-small" href="contact.html">Book / Ask</a>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="schedule">
+        <h2 id="schedule">Event Schedule</h2>
+
+        <table class="event-table">
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Date</th>
+              <th>Time</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Winter Night Jazz</td>
+              <td>March 14</td>
+              <td>7:00 PM</td>
+              <td>$30</td>
+            </tr>
+            <tr>
+              <td>Startup Summit</td>
+              <td>March 15</td>
+              <td>10:00 AM</td>
+              <td>$50</td>
+            </tr>
+            <tr>
+              <td>Comedy Showcase</td>
+              <td>March 16</td>
+              <td>8:00 PM</td>
+              <td>$25</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section aria-labelledby="gallery">
+        <h2 id="gallery">Gallery</h2>
+
+        <div class="gallery-grid">
+          <img src="images/gallery-1.jpg" alt="Conference setup with seating" />
+          <img src="images/gallery-2.jpg" alt="Stage lighting at a live show" />
+          <img src="images/crowd.jpg" alt="Guests enjoying a venue event" />
+          <img src="images/gallery-3.jpg" alt="Venue hall prepared for an event"
+          />
+        </div>
+      </section>
+
+      <p>
+        <a class="back-to-top" href="#top">Back to top ↑</a>
+      </p>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>&copy; <span id="year"></span> Skyline Event Center</p>
+
+        <p class="footer-links">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener"
+            >Instagram</a
+          >
+          <span aria-hidden="true">·</span>
+          <a href="https://www.facebook.com" target="_blank" rel="noopener"
+            >Facebook</a
+          >
+          <span aria-hidden="true">·</span>
+          <a href="contact.html">Contact</a>
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skyline Event Center | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img src="images/logo.gif" alt="Skyline logo" width="32" />
+          Skyline Event Center
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a class="btn" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Skyline Event Center</h1>
+          <p>
+            A modern venue for concerts, conferences, and private events in the
+            heart of the city.
+          </p>
+
+          <a class="btn" href="events.html">View Events</a>
+          <a class="btn-outline" href="contact.html">Book the Venue</a>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="images/hero.avif"
+            alt="Interior view of Skyline Event Center"
+          />
+        </div>
+      </section>
+      <section>
+        <h2>Featured Events</h2>
+
+        <div class="card-grid">
+          <article class="event-card">
+            <h3>Winter Night Jazz</h3>
+            <p>Friday • 7:00 PM</p>
+            <a class="btn-small" href="events.html">View Details</a>
+          </article>
+
+          <article class="event-card">
+            <h3>Startup Summit</h3>
+            <p>Saturday • 10:00 AM</p>
+            <a class="btn-small" href="events.html">View Details</a>
+          </article>
+
+          <article class="event-card">
+            <h3>Comedy Showcase</h3>
+            <p>Sunday • 8:00 PM</p>
+            <a class="btn-small" href="events.html">View Details</a>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Skyline Event Center</p>
+      <p>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener"
+          >Instagram</a
+        >
+        ·
+        <a href="https://www.facebook.com" target="_blank" rel="noopener"
+          >Facebook</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

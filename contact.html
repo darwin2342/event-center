@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img src="images/logo.gif" alt="Skyline logo" width="32" />
+          Skyline Event Center
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a class="btn" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1>Contact & Booking</h1>
+      <p>Have a question or want to book the venue? Send us a message below.</p>
+
+      <section aria-labelledby="contact-form">
+        <h2 id="contact-form">Inquiry Form</h2>
+
+        <form class="form" action="#" method="post">
+          <div class="form-row">
+            <label for="name">Full Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="eventType">Event Type</label>
+            <input
+              id="eventType"
+              name="eventType"
+              type="text"
+              placeholder="Concert, conference, birthday..."
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="date">Preferred Date</label>
+            <input id="date" name="date" type="date" />
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Tell us what you're planning..."
+              required
+            ></textarea>
+          </div>
+
+          <button class="btn" type="submit">Submit Inquiry</button>
+        </form>
+
+        <p>
+          Prefer email?
+          <a href="#">info@skylineevents.com</a>
+        </p>
+      </section>
+    </main>
+    
+  </body>
+</html>
